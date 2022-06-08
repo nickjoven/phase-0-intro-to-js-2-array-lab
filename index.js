@@ -61,13 +61,18 @@ function prependCat(name) {
 // console.log(cats.slice(0, 2)); This is another way to do it.
 */
 
-
+/*
+//I tried to refactor the code and it didn't work, I wonder why?
+function removeLastCat(cats) {
+    return {...cats.pop()
+    };
+  };
+*/
 function removeLastCat() {
     const removeLastArray = [...cats];
     removeLastArray.pop();
     return removeLastArray
 }
-
 // Test 9, nondestructively remove first cat
 
 function removeFirstCat() {
